@@ -12,9 +12,16 @@ class DataController extends Controller
 {
     public function data()
     {
-        $country = Countrys::find(1);
-        var_dump($country->name);
-        var_dump($country->incident);
+        $country = Countrys::all();
+        $km_voie = $country->incident->km_railway;
+
         
+        return view('index', [
+
+            "country" => $country,
+            "km_voie" => $km_voie
+
+
+        ]);
     }
 }

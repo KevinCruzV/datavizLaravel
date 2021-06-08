@@ -1,31 +1,26 @@
 <?php
 
-namespace App\Models;
+namespace App\Http\Controllers;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
-use Illuminate\Database\Eloquent\Model;
+use Illuminate\Http\Request;
 
-
-/**
- * Model pour la table incident
- */
-class Incident extends Model
+class IncidentReseauController extends Controller
 {
-
     use HasFactory;
     /**
      * nom de la table
      *
      * @var string $table
      */
-    protected $table = 'incident';
+    protected $table = 'railway_incident';
 
     /**
      * clef primaire
      *
      * @var string 
      */
-    protected $primaryKey = 'incident_id';
+    protected $primaryKey = 'railway_incident_id';
 
     /**
      * Pas de table avec dates
@@ -38,10 +33,4 @@ class Incident extends Model
     // {
     //     $this->belongsToMany(Countrys::class, 'have_incident', 'incident_id', 'country_id', 'incident_id', 'country_id');
     // }
-
-
-    public function incidentReseau()
-    {
-        return $this->hasOne(IncidentReseau::class, 'incident_id', 'incident_id');
-    }
 }
