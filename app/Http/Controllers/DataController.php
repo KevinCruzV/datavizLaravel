@@ -33,7 +33,8 @@ class DataController extends Controller
             'priceTicketJapan' => $japanData->organisation->ticket_price,
             'sizeRailwayFrance' => $franceData->incident->km_railway,
             'sizeRailwayJapan' => $japanData->incident->km_railway,
-        
+            'speedAverageFrance' => $franceData->incident->speed_average,
+            'speedAverageJapan' => $japanData->incident->speed_average,
         ]);
     }
 }
