@@ -13,18 +13,6 @@ class DataController extends Controller
 {
     public function data()
     {
-<<<<<<< HEAD
-        $country = Countrys::all();
-        $km_voie = $country->incident->km_railway;
-
-        
-        return view('index', [
-
-            "country" => $country,
-            "km_voie" => $km_voie
-
-
-=======
         $franceData = Countrys::find(1);
         //var_dump($franceData->name);
         //var_dump($franceData->incident->stations_number);
@@ -45,8 +33,8 @@ class DataController extends Controller
             'priceTicketJapan' => $japanData->organisation->ticket_price,
             'sizeRailwayFrance' => $franceData->incident->km_railway,
             'sizeRailwayJapan' => $japanData->incident->km_railway,
+            
         
->>>>>>> 708ace52f44d6f74bafc33c86cd0283209a753a2
         ]);
     }
 }
