@@ -14,8 +14,5 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
 
-Route::get('/test',[DataController::class, 'data']);
+Route::get('/',[DataController::class, 'data']);

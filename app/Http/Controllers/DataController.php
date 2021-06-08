@@ -24,10 +24,16 @@ class DataController extends Controller
         //var_dump($japanData->incident->stations_number);
         //var_dump($japanData->organisation->station_frequentation);
     
-        return view('test', [
+        return view('index', [
             'nameFrance' => $franceData->name,
-            'stations_number' => $franceData->incident->stations_number,
-            'nameJapan' => $japanData->name
-            ]);
+            'nameJapan' => $japanData->name,
+            'numberEmployeesFrance' => $franceData->organisation->number_employees,
+            'numberEmployeesJapan' => $japanData->organisation->number_employees,
+            'priceTicketFrance' => $franceData->organisation->ticket_price,
+            'priceTicketJapan' => $japanData->organisation->ticket_price,
+            'sizeRailwayFrance' => $franceData->incident->km_railway,
+            'sizeRailwayJapan' => $japanData->incident->km_railway,
+        
+        ]);
     }
 }
