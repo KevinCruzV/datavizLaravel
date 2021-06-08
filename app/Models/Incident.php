@@ -38,6 +38,10 @@ class Incident extends Model
     // {
     //     $this->belongsToMany(Countrys::class, 'have_incident', 'incident_id', 'country_id', 'incident_id', 'country_id');
     // }
+    
+    //public function countrys() {
+    //    return $this->hasOne(Countrys::class, 'country_id', 'country_id' );
+    //}
 
 
     public function incidentReseau()
