@@ -39,13 +39,18 @@ class Incident extends Model
     //     $this->belongsToMany(Countrys::class, 'have_incident', 'incident_id', 'country_id', 'incident_id', 'country_id');
     // }
     
-    //public function countrys() {
-    //    return $this->hasOne(Countrys::class, 'country_id', 'country_id' );
-    //}
+    public function countrys() {
+       return $this->belongsTo(Countrys::class, 'country_id', 'country_id' );
+    }
 
 
-    public function incidentReseau()
+    public function railwayIncident()
     {
-        return $this->hasOne(IncidentReseau::class, 'incident_id', 'incident_id');
+        return $this->hasOne(RailwayIncident::class, 'incident_id', 'incident_id');
+    }
+
+    public function mobilityIncident()
+    {
+        return $this->hasOne(MobilityIncident::class, 'incident_id', 'incident_id');
     }
 }

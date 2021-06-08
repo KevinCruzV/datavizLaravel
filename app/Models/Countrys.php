@@ -23,4 +23,6 @@ class Countrys extends Model
     {
         return $this->hasOne(organisation::class, 'organisation_id', 'country_id');
     }
+
+
 }
