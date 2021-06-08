@@ -16,5 +16,11 @@ class Countrys extends Model
     public function incident()
     {
         return $this->hasOne(Incident::class, 'country_id', 'country_id');
+
+    }
+
+    public function organisation()
+    {
+        return $this->hasOne(organisation::class, 'organisation_id', 'country_id');
     }
 }
