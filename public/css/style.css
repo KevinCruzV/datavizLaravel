@@ -1,0 +1,359 @@
+:root {
+    /* COLOR */
+
+    /* Main color of the site */
+    --main-color: #425FC6;
+
+    /* FONT */
+
+    /* Font color */
+    --font-color: #000000;
+    /* Font use in the site */
+    --main-font-family: 'Spinnaker', sans-serif;
+    --sen-font-family: 'Sen', sans-serif;
+    /* Font Size */
+    --title-font-size: 3vw;
+    --subtitle-font-size: 2.5vw;
+
+}
+
+* {
+    font-family: var(--main-font-family);
+}
+
+/* HERO BANNER */
+#heroBanner {
+    background: var(--main-color);
+    height: 100vh;
+
+}
+
+#heroBanner nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+
+#heroBanner nav span {
+    font-size: var(--title-font-size);
+    color: var(--font-color);
+    width: 100px;
+    padding-top: 40px;
+    margin-left: 90px;
+}
+
+#heroBanner nav button {
+    float: right;
+    height: 3vw;
+    width: 8vw;
+    margin-top: 40px;
+    margin-right: 90px;
+    border-radius: 40px;
+    border: none;
+    background-color: var(--font-color);
+    color: #FFF;
+    font-size: 1.5vw;
+}
+
+#heroBanner h2:nth-child(2) {
+    display: flex;
+    float: left;
+    margin-top: 250px;
+    padding-left: 90px;
+    padding-top: 5px;
+    border-top: solid 2px black;
+    font-size: 3.5vw;
+}
+
+#heroBanner h2:nth-child(3) {
+    display: flex;
+    float: right;
+    padding-right: 90px;
+    padding-top: 5px;
+    margin-top: 20px;
+    border-bottom: solid 2px black;
+    font-size: 3.5vw;
+}
+
+
+#heroBanner p:nth-child(4) {
+    display: flex;
+    margin-left: 90px;
+    margin-top: 630px;
+}
+
+#heroBanner p:nth-child(5) {
+    display: flex;
+    float: right;
+    margin-right: 90px;
+}
+
+/*TRAJET & INTRODUCTION */
+
+#roadMap {
+    display: flex;
+}
+
+/*LEFT PART OF THE PAGE*/
+#trajet {
+    height: 101vh;
+    width: 50%;
+    background-color: #F1F1F1;
+    border-right: 2px solid #425FC6;
+
+}
+
+#trajet h1 {
+    margin-top: 35px;
+    margin-left: 90px;
+    font-family: var(--sen-font-family);
+    font-weight: 700;
+    font-size: var(--title-font-size);
+}
+
+#trajet p:nth-child(2) {
+    font-size: var(--subtitle-font-size);
+    padding-top: 100px;
+    margin-left: 400px;
+}
+
+#trajet p {
+    font-size: var(--subtitle-font-size);
+    padding-top: 100px;
+    margin-left: 150px;
+}
+
+#trajet h4 {
+    margin-top: 30px;
+    margin-left: 250px;
+}
+
+#trajet h4:last-child {
+    padding-bottom: 20px;
+}
+
+
+
+/*RIGHT PART OF THE PAGE*/
+#intro {
+    height: 101vh;
+    width: 50%;
+    background-color: #F1F1F1;
+    overflow: hidden;
+}
+
+#intro h1 {
+    margin-top: 35px;
+    margin-left: 90px;
+    font-family: var(--sen-font-family);
+    font-weight: 700;
+    font-size: var(--title-font-size);
+
+}
+
+#intro p {
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 500px;
+    font-size: 1.5vw;
+}
+
+
+#intro p span {
+    color: var(--main-color);
+    font-weight: 700;
+}
+
+#intro svg {
+    position: relative;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    margin-top: 100px;
+    padding-bottom: 44px;
+}
+
+/* INFORMATIONS */
+#info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* PART OF FRANCE*/
+#france {
+    height: 100vh;
+    width: 50%;
+    background-color: #F1F1F1;
+
+}
+
+#france h1 {
+    margin-top: 35px;
+    margin-left: 90px;
+    font-family: var(--sen-font-family);
+    font-weight: 700;
+    font-size: var(--title-font-size);
+
+}
+
+.contained {
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+    margin-left: 90px;
+}
+
+.contained p {
+    margin-left: 30px;
+    font-size: 1.7vw;
+}
+
+
+
+/* PART OF JAPON */
+
+#japon {
+    float: right;
+    height: 100vh;
+    width: 50%;
+    background-color: #425FC6;
+    border-right: 2px solid #425FC6;
+    color: #FFF;
+}
+
+#japon h1 {
+    margin-top: 35px;
+    margin-left: 90px;
+    font-family: var(--sen-font-family);
+    font-weight: 700;
+    font-size: var(--title-font-size);
+
+}
+
+/*COMPARISON */
+#comparison {
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--main-color);
+    color: #F1F1F1;
+}
+
+#comparison h1 {
+    padding-top: 35px;
+    margin-left: 90px;
+    font-family: var(--sen-font-family);
+    font-weight: 700;
+    font-size: var(--title-font-size);
+
+}
+
+#comparison h4 {
+    margin-top: 20px;
+    margin-left: 90px;
+    font-size: 2vw;
+}
+
+#comparison figure {
+    height: 100px;
+    border-bottom: 1px solid #F1F1F1;
+
+}
+
+#trainShinkansen {
+    display: flex;
+    float: right;
+    width: 300px;
+    margin-top: 100px;
+    margin-right: 200px;
+}
+
+#trainTgv {
+    display: flex;
+    float: left;
+    width: 300px;
+    margin-top: 93px;
+    margin-left: 300px;
+}
+
+#countryC {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 100vw;
+    margin-top: 150px;
+}
+
+#countryC div {
+    margin-top: 50px;
+}
+
+#countryC h2 {
+    margin-left: 90px;
+    font-size: var(--subtitle-font-size);
+}
+
+#tgv {
+    width: 50%;
+}
+
+#tgv h3 {
+    margin-top: 50px;
+
+}
+
+#shinkansen {
+    width: 50%;
+
+}
+
+#shinkansen h3 {
+    margin-top: 50px;
+
+}
+
+.chart-container {
+    position: relative;
+    margin: auto;
+    height: 70vh;
+    width: 70vw;
+    margin-right: 300px;
+}
+
+#employees {
+    display: flex;
+    height: 100vh;
+    background-color: #F1F1F1;
+    align-items: center;
+}
+
+#employees h2 {
+    position: relative;
+    margin-top: -700px;
+    margin-left: 90px;
+    width: 300px;
+    font-family: var(--sen-font-family);
+    font-weight: 700;
+    font-size: var(--title-font-size);
+}
+
+#failures {
+    display: flex;
+    height: 100vh;
+    background-color: #F1F1F1;
+    align-items: center;
+}
+
+#failures h2 {
+    position: relative;
+    margin-top: -700px;
+    margin-left: 90px;
+    width: 300px;
+    font-family: var(--sen-font-family);
+    font-weight: 700;
+    font-size: var(--title-font-size);
+}

@@ -28,10 +28,13 @@ class DataController extends Controller
 
             // French data 
             'nameFrance' => $franceData->name,
+            'compagnyFrance' => $franceData->compagny,
             'numberEmployeesFrance' => $franceData->organisation->number_employees,
             'priceTicketFrance' => $franceData->organisation->ticket_price,
+            'frequentationFrance' => $franceData->organisation->station_frequentation,
             'sizeRailwayFrance' => $franceData->incident->km_railway,
             'speedAverageFrance' => $franceData->incident->speed_average,
+            'numberStationFrance' => $franceData->incident->stations_number,
 
             'railwayIncidentNumberFrance' => $franceData->incident->railwayIncident->number,
             'railwayDeraillementFrance' => $franceData->incident->railwayIncident->deraillement,
@@ -49,10 +52,13 @@ class DataController extends Controller
 
             // Japan Data
             'nameJapan' => $japanData->name,
+            'compagnyJapan' => $japanData->compagny,
             'numberEmployeesJapan' => $japanData->organisation->number_employees,
             'priceTicketJapan' => $japanData->organisation->ticket_price,
+            'frequentationJapan' => $japanData->organisation->station_frequentation,
             'sizeRailwayJapan' => $japanData->incident->km_railway,
             'speedAverageJapan' => $japanData->incident->speed_average,
+            'numberStationJapan' => $japanData->incident->stations_number,
 
             'railwayIncidentNumberJapan' => $japanData->incident->railwayIncident->number,
             'railwayDeraillementJapan' => $japanData->incident->railwayIncident->deraillement,
