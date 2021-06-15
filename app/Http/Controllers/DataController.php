@@ -72,6 +72,76 @@ class DataController extends Controller
             'mobilityCrossingStopSignalJapan' => $japanData->incident->mobilityIncident->Crossing_stop_signal,
             'mobilityOtherJapan' => $japanData->incident->mobilityIncident->other,
 
+            
+            // Belgium Data
+            'nameBelgique' => $belgiqueData->name,
+            'compagnyBelgique' => $belgiqueData->compagny,
+            'numberEmployeesBelgique' => $belgiqueData->organisation->number_employees,
+            'priceTicketBelgique' => $belgiqueData->organisation->ticket_price,
+            'frequentationBelgique' => $belgiqueData->organisation->station_frequentation,
+            'sizeRailwayBelgique' => $belgiqueData->incident->km_railway,
+            'speedAverageBelgique' => $belgiqueData->incident->speed_average,
+            'numberStationBelgique' => $belgiqueData->incident->stations_number,
+
+            'railwayIncidentNumberBelgique' => $belgiqueData->incident->railwayIncident->number,
+            'railwayDeraillementBelgique' => $belgiqueData->incident->railwayIncident->deraillement,
+            'railwayTracksDefaillanceBelgique' => $belgiqueData->incident->railwayIncident->tracks_defaillance,
+            'railwaySignallingIncidentBelgique' => $belgiqueData->incident->railwayIncident->signalling_incident,
+            'railwayWorkWithoutPermissionBelgique' => $belgiqueData->incident->railwayIncident->work_without_permission,
+            'railwayOtherBelgique' => $belgiqueData->incident->railwayIncident->other,
+            
+            'mobilityIncidentNumberBelgique' => $belgiqueData->incident->mobilityIncident->number,
+            'mobilityOpenDoorTrainBelgique' => $belgiqueData->incident->mobilityIncident->open_door_train,
+            'mobilityCrossingStopSignalBelgique' => $belgiqueData->incident->mobilityIncident->Crossing_stop_signal,
+            'mobilityOtherBelgique' => $belgiqueData->incident->mobilityIncident->other,
+        
+            
+            // Russian data
+            'nameRussie' => $russieData->name,
+            'compagnyRussie' => $russieData->compagny,
+            'numberEmployeesRussie' => $russieData->organisation->number_employees,
+            'priceTicketRussie' => $russieData->organisation->ticket_price,
+            'frequentationRussie' => $russieData->organisation->station_frequentation,
+            'sizeRailwayRussie' => $russieData->incident->km_railway,
+            'speedAverageRussie' => $russieData->incident->speed_average,
+            'numberStationRussie' => $russieData->incident->stations_number,
+
+            'railwayIncidentNumberRussie' => $russieData->incident->railwayIncident->number,
+            'railwayDeraillementRussie' => $russieData->incident->railwayIncident->deraillement,
+            'railwayTracksDefaillanceRussie' => $russieData->incident->railwayIncident->tracks_defaillance,
+            'railwaySignallingIncidentRussie' => $russieData->incident->railwayIncident->signalling_incident,
+            'railwayWorkWithoutPermissionRussie' => $russieData->incident->railwayIncident->work_without_permission,
+            'railwayOtherRussie' => $russieData->incident->railwayIncident->other,
+            
+            'mobilityIncidentNumberRussie' => $russieData->incident->mobilityIncident->number,
+            'mobilityOpenDoorTrainRussie' => $russieData->incident->mobilityIncident->open_door_train,
+            'mobilityCrossingStopSignalRussie' => $russieData->incident->mobilityIncident->Crossing_stop_signal,
+            'mobilityOtherRussie' => $russieData->incident->mobilityIncident->other,
+
+        
+            // Germany data
+            'nameAllemagne' => $allemagneData->name,
+            'compagnyAllemagne' => $allemagneData->compagny,
+            'numberEmployeesAllemagne' => $allemagneData->organisation->number_employees,
+            'priceTicketAllemagne' => $allemagneData->organisation->ticket_price,
+            'frequentationAllemagne' => $allemagneData->organisation->station_frequentation,
+            'sizeRailwayAllemagne' => $allemagneData->incident->km_railway,
+            'speedAverageAllemagne' => $allemagneData->incident->speed_average,
+            'numberStationAllemagne' => $allemagneData->incident->stations_number,
+
+            'railwayIncidentNumberAllemagne' => $allemagneData->incident->railwayIncident->number,
+            'railwayDeraillementAllemagnee' => $allemagneData->incident->railwayIncident->deraillement,
+            'railwayTracksDefaillanceAllemagne' => $allemagneData->incident->railwayIncident->tracks_defaillance,
+            'railwaySignallingIncidentAllemagne' => $allemagneData->incident->railwayIncident->signalling_incident,
+            'railwayWorkWithoutPermissionAllemagne' => $allemagneData->incident->railwayIncident->work_without_permission,
+            'railwayOtherAllemagne' => $allemagneData->incident->railwayIncident->other,
+            
+            'mobilityIncidentNumberAllemagne' => $allemagneData->incident->mobilityIncident->number,
+            'mobilityOpenDoorTrainAllemagne' => $allemagneData->incident->mobilityIncident->open_door_train,
+            'mobilityCrossingStopSignalAllemagne' => $allemagneData->incident->mobilityIncident->Crossing_stop_signal,
+            'mobilityOtherAllemagne' => $allemagneData->incident->mobilityIncident->other,
+
+        
         ]);
     }
 }
